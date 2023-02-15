@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Nov 28 13:38:46 2022
+# Process ID: 6436
+# Current directory: D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.runs/impl_1
+# Command line: vivado.exe -log test_env.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source test_env.tcl -notrace
+# Log file: D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.runs/impl_1/test_env.vdi
+# Journal file: D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source test_env.tcl -notrace

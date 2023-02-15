@@ -1,0 +1,32 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ProiectSSC_VHDL.srcs/sources_1/new/ANDgate.vhd" \
+"../../../../ProiectSSC_VHDL.srcs/sources_1/new/ANDgate_16bit.vhd" \
+"../../../../ProiectSSC_VHDL.srcs/sources_1/new/NANDgate_16bit.vhd" \
+"../../../../ProiectSSC_VHDL.srcs/sources_1/new/NORgate_16bit.vhd" \
+"../../../../ProiectSSC_VHDL.srcs/sources_1/new/NOTgate_16biti.vhd" \
+"../../../../ProiectSSC_VHDL.srcs/sources_1/new/NOTgate_1bit.vhd" \
+"../../../../ProiectSSC_VHDL.srcs/sources_1/new/NOTgate_4biti.vhd" \
+"../../../../ProiectSSC_VHDL.srcs/sources_1/new/NXORgate_16bit.vhd" \
+"../../../../ProiectSSC_VHDL.srcs/sources_1/new/ORgate3.vhd" \
+"../../../../ProiectSSC_VHDL.srcs/sources_1/new/ORgate_16bit.vhd" \
+"../../../../ProiectSSC_VHDL.srcs/sources_1/new/SSD.vhd" \
+"../../../../ProiectSSC_VHDL.srcs/sources_1/new/TESTeg.vhd" \
+"../../../../ProiectSSC_VHDL.srcs/sources_1/new/TESTisZero.vhd" \
+"../../../../ProiectSSC_VHDL.srcs/sources_1/new/XORgate3.vhd" \
+"../../../../ProiectSSC_VHDL.srcs/sources_1/new/XORgate_16bit.vhd" \
+"../../../../ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_16bit.vhd" \
+"../../../../ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_1bit.vhd" \
+"../../../../ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_4bit.vhd" \
+"../../../../ProiectSSC_VHDL.srcs/sources_1/new/leftLogicalRot.vhd" \
+"../../../../ProiectSSC_VHDL.srcs/sources_1/new/leftLogicalShift.vhd" \
+"../../../../ProiectSSC_VHDL.srcs/sources_1/new/mux21_1bit.vhd" \
+"../../../../ProiectSSC_VHDL.srcs/sources_1/new/pozORneg.vhd" \
+"../../../../ProiectSSC_VHDL.srcs/sources_1/new/rightArithmShift_16biti.vhd" \
+"../../../../ProiectSSC_VHDL.srcs/sources_1/new/rightLogicalRot.vhd" \
+"../../../../ProiectSSC_VHDL.srcs/sources_1/new/rightLogicalShift.vhd" \
+"../../../../ProiectSSC_VHDL.srcs/sources_1/new/subtract_16bit.vhd" \
+"../../../../ProiectSSC_VHDL.srcs/sources_1/new/test_env.vhd" \
+
+# Do not sort compile order
+nosort

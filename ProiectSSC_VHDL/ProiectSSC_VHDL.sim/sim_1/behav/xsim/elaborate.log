@@ -1,0 +1,41 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 10ede2208c864f52bf05381c632cf909 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testBench_behav xil_defaultlib.testBench -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.XORgate3 [xorgate3_default]
+Compiling architecture behavioral of entity xil_defaultlib.ANDgate [andgate_default]
+Compiling architecture behavioral of entity xil_defaultlib.ORgate3 [orgate3_default]
+Compiling architecture behavioral of entity xil_defaultlib.fullAdder_1bit [fulladder_1bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.fullAdder_4bit [fulladder_4bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.fullAdder_16bit [fulladder_16bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.NOTgate_1bit [notgate_1bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.NOTgate_4biti [notgate_4biti_default]
+Compiling architecture behavioral of entity xil_defaultlib.NOTgate_16biti [notgate_16biti_default]
+Compiling architecture behavioral of entity xil_defaultlib.subtract_16bit [subtract_16bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.rightArithmShift_16biti [rightarithmshift_16biti_default]
+Compiling architecture behavioral of entity xil_defaultlib.leftLogicalShift [leftlogicalshift_default]
+Compiling architecture behavioral of entity xil_defaultlib.rightLogicalShift [rightlogicalshift_default]
+Compiling architecture behavioral of entity xil_defaultlib.leftLogicalRot [leftlogicalrot_default]
+Compiling architecture behavioral of entity xil_defaultlib.rightLogicalRot [rightlogicalrot_default]
+Compiling architecture behavioral of entity xil_defaultlib.ORgate_16bit [orgate_16bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.NORgate_16bit [norgate_16bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.ANDgate_16bit [andgate_16bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.NANDgate_16bit [nandgate_16bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.XORgate_16bit [xorgate_16bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.NXORgate_16bit [nxorgate_16bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.pozORneg [pozorneg_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux21_1bit [mux21_1bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.TESTisZero [testiszero_default]
+Compiling architecture behavioral of entity xil_defaultlib.TESTeg [testeg_default]
+Compiling architecture behavioral of entity xil_defaultlib.TESTgt [testgt_default]
+Compiling architecture behavioral of entity xil_defaultlib.TESTlt [testlt_default]
+Compiling architecture behavioral of entity xil_defaultlib.testbench
+Built simulation snapshot testBench_behav

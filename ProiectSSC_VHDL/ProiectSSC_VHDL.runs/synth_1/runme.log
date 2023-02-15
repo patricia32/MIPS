@@ -1,0 +1,397 @@
+
+*** Running vivado
+    with args -log test_env.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source test_env.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source test_env.tcl -notrace
+Command: synth_design -top test_env -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10708
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1015.980 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'test_env' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/test_env.vhd:15]
+INFO: [Synth 8-3491] module 'instructionFetch' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionFetch.vhd:36' bound to instance 'IFportmap' of component 'instructionFetch' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/test_env.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'instructionFetch' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionFetch.vhd:48]
+WARNING: [Synth 8-614] signal 'reset' is read in the process but is not in the sensitivity list [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionFetch.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'instructionFetch' (1#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionFetch.vhd:48]
+INFO: [Synth 8-3491] module 'instructionDecode' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionDecode.vhd:36' bound to instance 'IDportmap' of component 'instructionDecode' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/test_env.vhd:95]
+INFO: [Synth 8-638] synthesizing module 'instructionDecode' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionDecode.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'instructionDecode' (2#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionDecode.vhd:45]
+INFO: [Synth 8-3491] module 'MainUnit' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/mainUnit.vhd:34' bound to instance 'MainUnitportmap' of component 'MainUnit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/test_env.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'MainUnit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/mainUnit.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'MainUnit' (3#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/mainUnit.vhd:47]
+INFO: [Synth 8-3491] module 'instructionExecute' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:36' bound to instance 'EXportmap' of component 'instructionExecute' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/test_env.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'instructionExecute' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:47]
+INFO: [Synth 8-3491] module 'fullAdder_16bit' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_16bit.vhd:34' bound to instance 'adder' of component 'fullAdder_16bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'fullAdder_16bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_16bit.vhd:42]
+INFO: [Synth 8-3491] module 'fullAdder_4bit' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_4bit.vhd:34' bound to instance 'pm1' of component 'fullAdder_4bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_16bit.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'fullAdder_4bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_4bit.vhd:42]
+INFO: [Synth 8-3491] module 'fullAdder_1bit' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_1bit.vhd:34' bound to instance 'pm1' of component 'fullAdder_1bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_4bit.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'fullAdder_1bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_1bit.vhd:42]
+INFO: [Synth 8-3491] module 'XORgate3' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/XORgate3.vhd:34' bound to instance 'sumPortMap' of component 'XORgate3' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_1bit.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'XORgate3' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/XORgate3.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'XORgate3' (4#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/XORgate3.vhd:41]
+INFO: [Synth 8-3491] module 'ANDgate' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/ANDgate.vhd:34' bound to instance 'a_and_b' of component 'ANDgate' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_1bit.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'ANDgate' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/ANDgate.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'ANDgate' (5#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/ANDgate.vhd:40]
+INFO: [Synth 8-3491] module 'ANDgate' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/ANDgate.vhd:34' bound to instance 'a_and_cin' of component 'ANDgate' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_1bit.vhd:64]
+INFO: [Synth 8-3491] module 'ANDgate' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/ANDgate.vhd:34' bound to instance 'b_and_cin' of component 'ANDgate' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_1bit.vhd:65]
+INFO: [Synth 8-3491] module 'ORgate3' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/ORgate3.vhd:34' bound to instance 'coutPortMap' of component 'ORgate3' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_1bit.vhd:66]
+INFO: [Synth 8-638] synthesizing module 'ORgate3' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/ORgate3.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'ORgate3' (6#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/ORgate3.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'fullAdder_1bit' (7#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_1bit.vhd:42]
+INFO: [Synth 8-3491] module 'fullAdder_1bit' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_1bit.vhd:34' bound to instance 'pm2' of component 'fullAdder_1bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_4bit.vhd:53]
+INFO: [Synth 8-3491] module 'fullAdder_1bit' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_1bit.vhd:34' bound to instance 'pm3' of component 'fullAdder_1bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_4bit.vhd:54]
+INFO: [Synth 8-3491] module 'fullAdder_1bit' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_1bit.vhd:34' bound to instance 'pm4' of component 'fullAdder_1bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_4bit.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'fullAdder_4bit' (8#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_4bit.vhd:42]
+INFO: [Synth 8-3491] module 'fullAdder_4bit' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_4bit.vhd:34' bound to instance 'pm2' of component 'fullAdder_4bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_16bit.vhd:53]
+INFO: [Synth 8-3491] module 'fullAdder_4bit' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_4bit.vhd:34' bound to instance 'pm3' of component 'fullAdder_4bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_16bit.vhd:54]
+INFO: [Synth 8-3491] module 'fullAdder_4bit' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_4bit.vhd:34' bound to instance 'pm4' of component 'fullAdder_4bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_16bit.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'fullAdder_16bit' (9#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_16bit.vhd:42]
+INFO: [Synth 8-3491] module 'subtract_16bit' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/subtract_16bit.vhd:34' bound to instance 'subtract' of component 'subtract_16bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:152]
+INFO: [Synth 8-638] synthesizing module 'subtract_16bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/subtract_16bit.vhd:42]
+INFO: [Synth 8-3491] module 'NOTgate_16biti' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NOTgate_16biti.vhd:34' bound to instance 'NOTpm' of component 'NOTgate_16biti' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/subtract_16bit.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'NOTgate_16biti' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NOTgate_16biti.vhd:39]
+INFO: [Synth 8-3491] module 'NOTgate_4biti' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NOTgate_4biti.vhd:34' bound to instance 'pm0' of component 'NOTgate_4biti' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NOTgate_16biti.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'NOTgate_4biti' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NOTgate_4biti.vhd:39]
+INFO: [Synth 8-3491] module 'NOTgate_1bit' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NOTgate_1bit.vhd:34' bound to instance 'pm0' of component 'NOTgate_1bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NOTgate_4biti.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'NOTgate_1bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NOTgate_1bit.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'NOTgate_1bit' (10#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NOTgate_1bit.vhd:39]
+INFO: [Synth 8-3491] module 'NOTgate_1bit' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NOTgate_1bit.vhd:34' bound to instance 'pm1' of component 'NOTgate_1bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NOTgate_4biti.vhd:46]
+INFO: [Synth 8-3491] module 'NOTgate_1bit' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NOTgate_1bit.vhd:34' bound to instance 'pm2' of component 'NOTgate_1bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NOTgate_4biti.vhd:47]
+INFO: [Synth 8-3491] module 'NOTgate_1bit' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NOTgate_1bit.vhd:34' bound to instance 'pm3' of component 'NOTgate_1bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NOTgate_4biti.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'NOTgate_4biti' (11#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NOTgate_4biti.vhd:39]
+INFO: [Synth 8-3491] module 'NOTgate_4biti' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NOTgate_4biti.vhd:34' bound to instance 'pm1' of component 'NOTgate_4biti' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NOTgate_16biti.vhd:46]
+INFO: [Synth 8-3491] module 'NOTgate_4biti' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NOTgate_4biti.vhd:34' bound to instance 'pm2' of component 'NOTgate_4biti' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NOTgate_16biti.vhd:47]
+INFO: [Synth 8-3491] module 'NOTgate_4biti' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NOTgate_4biti.vhd:34' bound to instance 'pm3' of component 'NOTgate_4biti' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NOTgate_16biti.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'NOTgate_16biti' (12#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NOTgate_16biti.vhd:39]
+INFO: [Synth 8-3491] module 'fullAdder_16bit' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_16bit.vhd:34' bound to instance 'FOR_B_pm' of component 'fullAdder_16bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/subtract_16bit.vhd:58]
+INFO: [Synth 8-3491] module 'fullAdder_16bit' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/fullAdder_16bit.vhd:34' bound to instance 'FULLADDERpm' of component 'fullAdder_16bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/subtract_16bit.vhd:59]
+INFO: [Synth 8-256] done synthesizing module 'subtract_16bit' (13#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/subtract_16bit.vhd:42]
+INFO: [Synth 8-3491] module 'rightArithmShift_16biti' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/rightArithmShift_16biti.vhd:34' bound to instance 'rightArithmShift_pm' of component 'rightArithmShift_16biti' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'rightArithmShift_16biti' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/rightArithmShift_16biti.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'rightArithmShift_16biti' (14#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/rightArithmShift_16biti.vhd:39]
+INFO: [Synth 8-3491] module 'leftLogicalShift' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/leftLogicalShift.vhd:34' bound to instance 'leftLogicalShift_pm' of component 'leftLogicalShift' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:156]
+INFO: [Synth 8-638] synthesizing module 'leftLogicalShift' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/leftLogicalShift.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'leftLogicalShift' (15#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/leftLogicalShift.vhd:39]
+INFO: [Synth 8-3491] module 'rightLogicalShift' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/rightLogicalShift.vhd:34' bound to instance 'rightLogicalShift_pm' of component 'rightLogicalShift' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:157]
+INFO: [Synth 8-638] synthesizing module 'rightLogicalShift' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/rightLogicalShift.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'rightLogicalShift' (16#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/rightLogicalShift.vhd:39]
+INFO: [Synth 8-3491] module 'leftLogicalRot' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/leftLogicalRot.vhd:34' bound to instance 'leftLogicalRot_pm' of component 'leftLogicalRot' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'leftLogicalRot' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/leftLogicalRot.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'leftLogicalRot' (17#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/leftLogicalRot.vhd:39]
+INFO: [Synth 8-3491] module 'rightLogicalRot' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/rightLogicalRot.vhd:34' bound to instance 'rightLogicalRot_pm' of component 'rightLogicalRot' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:159]
+INFO: [Synth 8-638] synthesizing module 'rightLogicalRot' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/rightLogicalRot.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'rightLogicalRot' (18#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/rightLogicalRot.vhd:39]
+INFO: [Synth 8-3491] module 'ORgate_16bit' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/ORgate_16bit.vhd:34' bound to instance 'ORgate_16bit_pm' of component 'ORgate_16bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:161]
+INFO: [Synth 8-638] synthesizing module 'ORgate_16bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/ORgate_16bit.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'ORgate_16bit' (19#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/ORgate_16bit.vhd:40]
+INFO: [Synth 8-3491] module 'NORgate_16bit' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NORgate_16bit.vhd:34' bound to instance 'NORgate_16bit_pm' of component 'NORgate_16bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:162]
+INFO: [Synth 8-638] synthesizing module 'NORgate_16bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NORgate_16bit.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'NORgate_16bit' (20#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NORgate_16bit.vhd:40]
+INFO: [Synth 8-3491] module 'ANDgate_16bit' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/ANDgate_16bit.vhd:34' bound to instance 'ANDgate_16bit_pm' of component 'ANDgate_16bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:163]
+INFO: [Synth 8-638] synthesizing module 'ANDgate_16bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/ANDgate_16bit.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'ANDgate_16bit' (21#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/ANDgate_16bit.vhd:40]
+INFO: [Synth 8-3491] module 'NANDgate_16bit' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NANDgate_16bit.vhd:34' bound to instance 'NANDgate_16bit_pm' of component 'NANDgate_16bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:164]
+INFO: [Synth 8-638] synthesizing module 'NANDgate_16bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NANDgate_16bit.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'NANDgate_16bit' (22#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NANDgate_16bit.vhd:40]
+INFO: [Synth 8-3491] module 'XORgate_16bit' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/XORgate_16bit.vhd:34' bound to instance 'XORgate_16bit_pm' of component 'XORgate_16bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'XORgate_16bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/XORgate_16bit.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'XORgate_16bit' (23#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/XORgate_16bit.vhd:40]
+INFO: [Synth 8-3491] module 'NXORgate_16bit' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NXORgate_16bit.vhd:34' bound to instance 'NXORgate_16bit_pm' of component 'NXORgate_16bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:166]
+INFO: [Synth 8-638] synthesizing module 'NXORgate_16bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NXORgate_16bit.vhd:40]
+INFO: [Synth 8-3491] module 'NOTgate_16biti' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NOTgate_16biti.vhd:34' bound to instance 'NOTpm' of component 'NOTgate_16biti' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NXORgate_16bit.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'NXORgate_16bit' (24#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NXORgate_16bit.vhd:40]
+INFO: [Synth 8-3491] module 'NOTgate_16biti' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/NOTgate_16biti.vhd:34' bound to instance 'NOTgate_16bit_pm' of component 'NOTgate_16biti' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:167]
+INFO: [Synth 8-3491] module 'pozORneg' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/pozORneg.vhd:34' bound to instance 'pozORneg_pm' of component 'pozORneg' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:170]
+INFO: [Synth 8-638] synthesizing module 'pozORneg' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/pozORneg.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'pozORneg' (25#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/pozORneg.vhd:39]
+INFO: [Synth 8-3491] module 'TESTeg' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/TESTeg.vhd:34' bound to instance 'TESTeg_pm' of component 'TESTeg' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'TESTeg' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/TESTeg.vhd:40]
+INFO: [Synth 8-3491] module 'subtract_16bit' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/subtract_16bit.vhd:34' bound to instance 'SUBpm' of component 'subtract_16bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/TESTeg.vhd:56]
+INFO: [Synth 8-3491] module 'TESTisZero' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/TESTisZero.vhd:34' bound to instance 'ZEROpm' of component 'TESTisZero' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/TESTeg.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'TESTisZero' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/TESTisZero.vhd:39]
+INFO: [Synth 8-3491] module 'mux21_1bit' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/mux21_1bit.vhd:34' bound to instance 'MUXpm' of component 'mux21_1bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/TESTisZero.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'mux21_1bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/mux21_1bit.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'mux21_1bit' (26#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/mux21_1bit.vhd:41]
+INFO: [Synth 8-256] done synthesizing module 'TESTisZero' (27#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/TESTisZero.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'TESTeg' (28#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/TESTeg.vhd:40]
+INFO: [Synth 8-3491] module 'TESTgt' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/TESTgt.vhd:34' bound to instance 'TESTgt_pm' of component 'TESTgt' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'TESTgt' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/TESTgt.vhd:40]
+INFO: [Synth 8-3491] module 'subtract_16bit' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/subtract_16bit.vhd:34' bound to instance 'SUB_pm' of component 'subtract_16bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/TESTgt.vhd:57]
+INFO: [Synth 8-3491] module 'pozORneg' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/pozORneg.vhd:34' bound to instance 'pozORneg_pm' of component 'pozORneg' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/TESTgt.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'TESTgt' (29#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/TESTgt.vhd:40]
+INFO: [Synth 8-3491] module 'TESTlt' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/TESTlt.vhd:34' bound to instance 'TESTlt_pm' of component 'TESTlt' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:174]
+INFO: [Synth 8-638] synthesizing module 'TESTlt' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/TESTlt.vhd:40]
+INFO: [Synth 8-3491] module 'subtract_16bit' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/subtract_16bit.vhd:34' bound to instance 'SUB_pm' of component 'subtract_16bit' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/TESTlt.vhd:57]
+INFO: [Synth 8-3491] module 'pozORneg' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/pozORneg.vhd:34' bound to instance 'pozORneg_pm' of component 'pozORneg' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/TESTlt.vhd:58]
+INFO: [Synth 8-256] done synthesizing module 'TESTlt' (30#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/TESTlt.vhd:40]
+WARNING: [Synth 8-614] signal 'ADDres' is read in the process but is not in the sensitivity list [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:218]
+WARNING: [Synth 8-614] signal 'SUBres' is read in the process but is not in the sensitivity list [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:218]
+WARNING: [Synth 8-614] signal 'rightArithShift' is read in the process but is not in the sensitivity list [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:218]
+WARNING: [Synth 8-614] signal 'leftLogShift' is read in the process but is not in the sensitivity list [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:218]
+WARNING: [Synth 8-614] signal 'rightLogShift' is read in the process but is not in the sensitivity list [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:218]
+WARNING: [Synth 8-614] signal 'leftLogRot' is read in the process but is not in the sensitivity list [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:218]
+WARNING: [Synth 8-614] signal 'rightLogRot' is read in the process but is not in the sensitivity list [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:218]
+WARNING: [Synth 8-614] signal 'ANDres' is read in the process but is not in the sensitivity list [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:218]
+WARNING: [Synth 8-614] signal 'NANDres' is read in the process but is not in the sensitivity list [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:218]
+WARNING: [Synth 8-614] signal 'ORres' is read in the process but is not in the sensitivity list [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:218]
+WARNING: [Synth 8-614] signal 'NORres' is read in the process but is not in the sensitivity list [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:218]
+WARNING: [Synth 8-614] signal 'XORres' is read in the process but is not in the sensitivity list [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:218]
+WARNING: [Synth 8-614] signal 'NXORres' is read in the process but is not in the sensitivity list [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:218]
+WARNING: [Synth 8-614] signal 'NOTres' is read in the process but is not in the sensitivity list [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:218]
+WARNING: [Synth 8-614] signal 'TESTegRes' is read in the process but is not in the sensitivity list [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:218]
+WARNING: [Synth 8-614] signal 'TESTgtRes' is read in the process but is not in the sensitivity list [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:218]
+WARNING: [Synth 8-614] signal 'TESTltRes' is read in the process but is not in the sensitivity list [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:218]
+WARNING: [Synth 8-614] signal 'pozORnegres' is read in the process but is not in the sensitivity list [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:218]
+WARNING: [Synth 8-614] signal 'PC' is read in the process but is not in the sensitivity list [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:218]
+WARNING: [Synth 8-614] signal 'ALUout' is read in the process but is not in the sensitivity list [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:218]
+INFO: [Synth 8-256] done synthesizing module 'instructionExecute' (31#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:47]
+INFO: [Synth 8-3491] module 'memory' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/memory.vhd:36' bound to instance 'MEMportmap' of component 'memory' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/test_env.vhd:98]
+INFO: [Synth 8-638] synthesizing module 'memory' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/memory.vhd:50]
+WARNING: [Synth 8-614] signal 'ALUResIn' is read in the process but is not in the sensitivity list [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/memory.vhd:64]
+WARNING: [Synth 8-614] signal 'rd1_code' is read in the process but is not in the sensitivity list [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/memory.vhd:64]
+WARNING: [Synth 8-614] signal 'rd2_code' is read in the process but is not in the sensitivity list [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/memory.vhd:64]
+INFO: [Synth 8-256] done synthesizing module 'memory' (32#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/memory.vhd:50]
+INFO: [Synth 8-3491] module 'SSD' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/SSD.vhd:36' bound to instance 'SSDportmap' of component 'SSD' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/test_env.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'SSD' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/SSD.vhd:43]
+INFO: [Synth 8-226] default block is never used [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/SSD.vhd:78]
+INFO: [Synth 8-256] done synthesizing module 'SSD' (33#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/SSD.vhd:43]
+INFO: [Synth 8-3491] module 'MPG' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/MPG.vhd:36' bound to instance 'MPG1portmap' of component 'MPG' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/test_env.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'MPG' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/MPG.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'MPG' (34#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/MPG.vhd:42]
+INFO: [Synth 8-3491] module 'MPG' declared at 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/MPG.vhd:36' bound to instance 'MPG2portmap' of component 'MPG' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/test_env.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'test_env' (35#1) [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/test_env.vhd:15]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1015.980 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1015.980 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1015.980 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 1015.980 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/constrs_1/imports/test_env/as.xdc]
+Finished Parsing XDC File [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/constrs_1/imports/test_env/as.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/constrs_1/imports/test_env/as.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/test_env_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/test_env_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1051.488 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1051.488 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1051.488 ; gain = 35.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1051.488 ; gain = 35.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1051.488 ; gain = 35.508
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-327] inferring latch for variable 'RegDst_reg' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/mainUnit.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'RegOp_reg' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/mainUnit.vhd:54]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUSrc_reg' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/mainUnit.vhd:55]
+WARNING: [Synth 8-327] inferring latch for variable 'Branch_reg' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/mainUnit.vhd:56]
+WARNING: [Synth 8-327] inferring latch for variable 'Jump_reg' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/mainUnit.vhd:57]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUOp_reg' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/mainUnit.vhd:61]
+WARNING: [Synth 8-327] inferring latch for variable 'MemWrite_reg' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/mainUnit.vhd:58]
+WARNING: [Synth 8-327] inferring latch for variable 'MemtoReg_reg' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/mainUnit.vhd:59]
+WARNING: [Synth 8-327] inferring latch for variable 'RegWrite_reg' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/mainUnit.vhd:60]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUout_reg' [D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.srcs/sources_1/new/instructionExecute.vhd:180]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1051.488 ; gain = 35.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 1     
+	   3 Input   16 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 144   
+	   2 Input      1 Bit         XORs := 32    
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input   16 Bit        Muxes := 9     
+	 257 Input   16 Bit        Muxes := 1     
+	  17 Input   16 Bit        Muxes := 1     
+	   9 Input   16 Bit        Muxes := 2     
+	   5 Input   16 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 2     
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 8     
+	   4 Input    1 Bit        Muxes := 3     
+	   5 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1051.488 ; gain = 35.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1051.488 ; gain = 35.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1051.488 ; gain = 35.508
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1058.012 ; gain = 42.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1066.316 ; gain = 50.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1066.316 ; gain = 50.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1066.316 ; gain = 50.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1066.316 ; gain = 50.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1066.316 ; gain = 50.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1066.316 ; gain = 50.336
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    12|
+|3     |LUT1   |     3|
+|4     |LUT2   |     9|
+|5     |LUT3   |     7|
+|6     |LUT4   |     4|
+|7     |LUT5   |    11|
+|8     |LUT6   |    66|
+|9     |FDRE   |    46|
+|10    |LD     |    10|
+|11    |LDC    |     1|
+|12    |LDCP   |     1|
+|13    |IBUF   |     6|
+|14    |OBUF   |    11|
+|15    |OBUFT  |    16|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1066.316 ; gain = 50.336
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1066.316 ; gain = 14.828
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1066.316 ; gain = 50.336
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1078.367 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 24 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 10 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1078.367 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  LD => LDCE (inverted pins: G): 10 instances
+  LDC => LDCE: 1 instance 
+  LDCP => LDCP (GND, LDCE, LUT3(x2), VCC): 1 instance 
+
+INFO: [Common 17-83] Releasing license: Synthesis
+144 Infos, 34 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:45 . Memory (MB): peak = 1078.367 ; gain = 62.387
+INFO: [Common 17-1381] The checkpoint 'D:/OneDrive - Technical University of Cluj-Napoca/Desktop/utcn/anul 3/Sem 1 anul 3/SSC/Proiect SSC/ProiectSSC_VHDL/ProiectSSC_VHDL.runs/synth_1/test_env.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file test_env_utilization_synth.rpt -pb test_env_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  8 08:07:14 2022...
